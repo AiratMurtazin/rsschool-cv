@@ -8,7 +8,7 @@
 
 #### Contacts
 
-- **Telegram:** t.me/Amokrif
+- **Telegram:** [Telegram](t.me/Amokrif)
 - **Discord:** Airat (@AiratMurtazin)
 - **Email:** airat.murtazin4378@gmail.com
 
