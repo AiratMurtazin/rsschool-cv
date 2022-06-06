@@ -1,4 +1,4 @@
-# Airat Murtazin
+<!-- # Airat Murtazin -->
 
 ---
 
@@ -24,7 +24,7 @@ I hope I will succeed, as I know my strong sides:
 - Enjoying the process of self-improvement
 - Knowing English language on appropriate level in order to enter IT industry
 
-What  attracts me most is the ability to grow as I get better within my skills, which motivates me to move forward.
+What attracts me most is the ability to grow as I get better within my skills, which motivates me to move forward.
 
 #### Skills
 
