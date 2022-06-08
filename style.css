@@ -95,6 +95,10 @@ body {
   padding: 25px 0;
 }
 
+.mail-link {
+  text-decoration: none;
+}
+
 #profile {
   /* background-color: #40739e; */
   /* background-image: url(/assets/img/Blue\ Jeans.jpg); */
@@ -116,7 +120,8 @@ body {
 }
 
 #contacts {
-  padding: 20px;
+  padding: 15px;
+  width: 300px;
 }
 
 #contacts ul {
@@ -124,6 +129,36 @@ body {
 }
 
 #contacts ul li {
-  padding: 10px;
+  padding: 10px 10px 10px 0;
   list-style: none;
+}
+
+#education {
+  grid-row: 3/4;
+  padding: 15px;
+}
+
+#education h2 {
+  padding: 15px;
+}
+
+#education p {
+  padding: 7px 0 0 10px;
+}
+
+/*! ////////////////////////////// */
+/*TODO Нужно чтобы текст в about me не увеличивал высоту всех row, надо чтобы он наслаивался на другой пункт */
+/*! ////////////////////////////// */
+
+#about-me {
+  text-align: center;
+  margin-top: 15px;
+  height: 189px;
+  overflow-y: visible;
+}
+
+.text {
+  padding-top: 15px;
+  font-family: var(--main-font-family);
+  text-align: left;
 }
