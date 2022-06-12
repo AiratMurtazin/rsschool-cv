@@ -4,7 +4,10 @@
 }
 
 :root {
-  --main-font-family: "Roboto", sans-serif;
+  --main-font-family: "Times New Roman", Times, serif;
+  --added-style-color: #01a3a4;
+  --container-background-color: #fff;
+  --main-font-size: 1.2rem;
 }
 
 body {
@@ -13,13 +16,14 @@ body {
 }
 
 .container {
+  position: relative;
   max-width: 1440px;
   height: auto;
   margin: 25px auto;
   border-radius: 8px;
   box-shadow: -1px 2px 31px 20px rgba(34, 60, 80, 0.2);
   display: grid;
-  background-color: #fff;
+  background-color: var(--container-background-color);
 }
 
 .img {
@@ -28,7 +32,6 @@ body {
   border-radius: 50%;
   object-fit: cover;
   object-position: top;
-  margin: 0 auto;
 }
 
 .nav-list {
@@ -36,11 +39,18 @@ body {
   display: flex;
   line-height: 45px;
   justify-content: space-around;
+  font-size: var(--main-font-size);
 }
 
 .link {
+  display: inline-block;
   text-decoration: none;
   color: black;
+  transition: all 0.3s linear;
+}
+
+.link:hover {
+  transform: scale(1.5);
 }
 
 .main {
@@ -50,11 +60,19 @@ body {
   margin-top: 35px;
 }
 .profile {
-  margin: 0 auto;
+  width: 100%;
+  color: #fff;
+  padding: 0 !important;
+}
+
+.profile h1 {
+  text-align: center;
+  font-size: 4rem;
 }
 
 .profile h4 {
   text-align: center;
+  font-size: var(--main-font-size);
 }
 
 .section {
@@ -66,29 +84,41 @@ body {
 
 .section-title h1 {
   padding-bottom: 10px;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .section-title {
-  text-align: left;
   margin: 25px 0 0 25px;
 }
 
 .text {
   font-family: var(--main-font-family);
+  font-size: var(--main-font-size);
 }
 
 .skills-list {
   list-style: none;
+  width: 70%;
+  margin-left: 20px;
+  font-size: var(--main-font-size);
 }
-
+.about-me {
+  padding-bottom: 0 !important;
+}
 h2 {
-  padding-bottom: 15px;
+  background-color: var(--added-style-color);
+  margin-bottom: 15px;
+  width: 40%;
+  color: #fff;
+  padding-left: 25px;
+  border-radius: 0 20px 20px 0;
+  font-size: 2rem;
 }
 
 .container-skills {
   width: 100%;
   background-color: #ddd;
+  border-radius: 20px;
 }
 
 .graph {
@@ -96,11 +126,12 @@ h2 {
   padding-top: 10px;
   padding-bottom: 10px;
   color: white;
+  border-radius: 20px 0 0 20px;
 }
 
 .html {
   width: 90%;
-  background-color: #04aa6d;
+  background-color: #e67e22;
 } /* Green */
 .css {
   width: 90%;
@@ -108,7 +139,7 @@ h2 {
 } /* Blue */
 .js {
   width: 40%;
-  background-color: #f44336;
+  background-color: #f1c40f;
 } /* Red */
 .git {
   width: 30%;
@@ -120,7 +151,7 @@ h2 {
 }
 
 .skills {
-  width: 80%;
+  width: 100%;
 }
 
 .contacts {
@@ -154,4 +185,58 @@ h2 {
 
 .skills-item {
   padding: 5px 0 5px 0;
+}
+
+.curved {
+  background: var(--added-style-color);
+  width: 100%;
+  text-align: center;
+}
+
+.curved svg {
+  display: block;
+}
+
+.design {
+  width: 25px;
+  background: var(--added-style-color);
+  height: 100%;
+  position: absolute;
+  border-radius: 8px 0 0 8px;
+}
+
+.curved.upper {
+  background: #fff;
+}
+
+.fa-telegram {
+  color: #2196f3;
+  padding-left: 4px;
+}
+
+.fa-discord {
+  color: #9c88ff;
+}
+
+.fa-envelope {
+  color: #e1b12c;
+  padding-left: 4px;
+}
+
+.font {
+  font-size: var(--main-font-size);
+}
+
+/*TODO  make hover links work*/
+
+.contact-link:hover + .fa-brands {
+  animation: bigger 1s;
+  transition: all 1s ease;
+  color: red;
+}
+
+@keyframes bigger {
+  100% {
+    transform: scale(1.5);
+  }
 }
