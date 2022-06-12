@@ -22,6 +22,7 @@
     <title>Airat Murtazin CV</title>
   </head>
   <body>
+    
     <div class="container">
       <!--! HEADER -->
       <header class="header">
@@ -47,78 +48,131 @@
         </nav>
       </header>
       <!--! MAIN -->
-      <main class="main">
+      <main class="main">  
         <img src="/assets/img/CV ava.jpg" alt="portrait of me" class="img" />
-
-        <section class="section" id="profile">
+        
+        <section class="section profile" id="profile">
           <div class="section-title">
-            <h1>Airat Murtazin</h1>
+            <div class="curved">
+            <h1>Airat Murtazin </h1>
             <h4>Junior Frontend Developer</h4>
           </div>
+          </div>
         </section>
-        <section class="section" id="contacts">
-          <div class="section-title">
+        <section class="section contacts" id="contacts">
+           <div class="section-title">
             <h2>Contacts</h2>
-            <ul>
+            <ul class="contact-links">
               <li>
-                <i class="fa-brands fa-telegram"></i>
-                <a href="https://t.me/Amokrif" target="_blank">Telegram</a>
+                <i class="fa-brands fa-telegram fa-xl"></i>
+                <a href="https://t.me/Amokrif" target="_blank" class="contact-link">Telegram</a>
               </li>
               <li>
-                <i class="fa-brands fa-discord"></i>
+                <i class="fa-brands fa-discord fa-xl"></i>
                 <a
                   href="https://discordapp.com/users/958653758080962580/ "
-                  target="_blank"
+                  target="_blank" class="contact-link"
                 >
                   Discord</a
                 >
               </li>
               <li>
-                <i class="fa-solid fa-envelope"></i>
-                <a href="mailto:airat.murtazin4378@gmail.com" class="mail-link"
+                <i class="fa-solid fa-envelope fa-xl"></i>
+                <a href="mailto:airat.murtazin4378@gmail.com" class="contact-link mail-link"
                   >airat.murtazin4378@gmail.com</a
                 >
               </li>
             </ul>
           </div>
         </section>
-        <section class="section" id="about-me">
+        <section class="section about-me" id="about-me">
           <div class="section-title">
             <h2>About Me</h2>
             <pre class="text">
-              My main goal is to become a Frontend Developer, and get better at it each and every day.
+       My main goal is to become a Frontend Developer, and get better at it each and every 
 
-              I hope I will succeed, as I know my strong sides:
-              
-                • Ability and desire to learn new things
-                • Enjoying the process of self-improvement
-                • Knowing English language on appropriate level in order to enter IT industry
-              
-              What attracts me most is the ability to grow as I get better within my skills, which motivates me to move forward.</pre
-            >
+       I hope I will succeed, as I know my strong sides:
+     
+       • Ability and desire to learn new things
+       • Enjoying the process of self-improvement
+       • Knowing English language on appropriate level in order to enter IT industry
+     
+     What attracts me most is the ability to grow as I get better within my skills, which motivates me to move forward.</pre>
           </div>
         </section>
-        <section class="section" id="skills">
+        <section class="section skills" id="skills">
           <div class="section-title">
             <h2>Skills</h2>
+            <div class="skills-list">
+              <div class="skills-item"> <p>HTML</p>
+                <div class="container-skills">
+                <div class="graph html">90%</div>
+            </div>
+              <div class="skills-item"> <p>CSS/SASS</p>
+                <div class="container-skills">
+                  <div class="graph css">90%</div> 
+                   </div> 
+                  </div >
+              </div >
+              <div class="skills-item"> <p>JavaScript</p> 
+                <div class="container-skills">
+                  <div class="graph js">40%</div> 
+                   </div> 
+                  </div >
+              </div >
+              <div class="skills-item"> <p>Git, Github</p> 
+                <div class="container-skills">
+                  <div class="graph git">30%</div> 
+                  </div >
+              </div >
+              <div class="skills-item"> <p>Chrome DevTools</p> 
+                <div class="container-skills">
+                  <div class="graph dev-tools">30%</div>  
+              </div>
+
+            </div>
           </div>
         </section>
-        <section class="section" id="code-example">
+        <section class="section code-example" id="code-example">
           <div class="section-title">
             <h2>Code Example</h2>
+            <pre class="code"><code class="code-example_code">
+              form.addEventListener('submit', e => {
+              e.preventDefault();
+              let arr = [];
+            
+              input.filter(a => {
+                if (a.checked) {
+                  arr.push(a);
+                }
+              });
+            
+              arr.forEach(each => {
+                if (each.classList.contains('correct')) {
+                  each.closest('ul').classList.add('green');
+                } else {
+                  each.closest('ul').classList.add('red');
+                }
+              });
+            });</code> </pre>
           </div>
         </section>
-        <section class="section" id="education">
+        <section class="section education" id="education">
           <div class="section-title">
             <h2>Education</h2>
             <h4>Herzen Pedagogical State University:</h4>
             <p>• Bachelor of Pedagogical Education</p>
           </div>
         </section>
-        <section class="section" id="english">
+        <section class="section english" id="english">
           <div class="section-title">
             <h2>English</h2>
+            <p class="english-info">
+              • B2 (I can understand almost everything, written and spoken. But
+              has some problems in grammar and speaking)
+            </p>
           </div>
+          </section>
         </section>
       </main>
       <!--! FOOTER -->
