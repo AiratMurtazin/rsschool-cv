@@ -3,9 +3,6 @@
   box-sizing: border-box;
 }
 
-/* TODO  3) Responsive!!!  */
-/*! OPTIONAL  4) Make more animation, more imgs in empty areas   */
-
 :root {
   --main-font-family: "Times New Roman", Times, serif;
   --added-style-color: #01a3a4;
@@ -16,6 +13,14 @@
 body {
   font-family: var(--main-font-family);
   background-color: #d2dae2;
+  margin: 0;
+  padding: 0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .container {
@@ -108,6 +113,7 @@ body {
 .about-me {
   padding-bottom: 0 !important;
 }
+
 h2 {
   background-color: var(--added-style-color);
   margin-bottom: 15px;
@@ -230,8 +236,6 @@ h2 {
   font-size: var(--main-font-size);
 }
 
-/*TODO  make hover links work*/
-
 .contact-link:hover + .fa-brands {
   animation: bigger 1s;
   transition: all 1s ease;
@@ -279,24 +283,4 @@ h2 {
 .cv-link {
   text-decoration: none;
   font-size: var(--main-font-size);
-}
-
-.binary {
-  position: absolute;
-  top: 60px;
-  right: 0;
-  opacity: 1;
-}
-
-/* .binary1 {
-  position: absolute;
-  top: 60px;
-  right: 280px;
-} */
-
-.binary2 {
-  position: absolute;
-  top: 60px;
-  left: 0;
-  opacity: 1;
 }
