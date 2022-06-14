@@ -280,3 +280,23 @@ h2 {
   text-decoration: none;
   font-size: var(--main-font-size);
 }
+
+.binary {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  opacity: 1;
+}
+
+/* .binary1 {
+  position: absolute;
+  top: 60px;
+  right: 280px;
+} */
+
+.binary2 {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  opacity: 1;
+}
